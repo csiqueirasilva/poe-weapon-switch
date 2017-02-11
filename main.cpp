@@ -99,5 +99,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	KeyboardHook = SetWindowsHookEx(WH_KEYBOARD_LL, KeyboardHookProc, hInstance, 0);
 	StayAlive();
 	UnhookWindowsHookEx(KeyboardHook);
+	UnhookWindowsHookEx(MouseHook);
 	return 0;
 }
